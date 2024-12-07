@@ -295,6 +295,7 @@
 .section-3 .section-3__buttons{
     display: flex;
     justify-content: flex-end;
+    gap: 30px;
 }
 
 .section-3 .section-3__buttons .button-1 .button-title{
