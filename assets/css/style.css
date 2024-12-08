@@ -1,5 +1,7 @@
 .header{
     padding: 30px 0;
+    position: relative;
+    z-index: 1;
 }
 
 .header .header__wrap{
@@ -56,6 +58,12 @@
     align-items: center;
     justify-content: center;
 }
+.header .header__comunity a:hover{
+    color: #003459;
+    background-color: #ffffff;
+    border: 1.5px solid #003459;
+    transition: color 0.5s, background-color 1s, border 1s;
+}
 
 /* Buttonn */
 .button{
@@ -73,6 +81,7 @@
 .button-2{
     background: var(--color-text-main);
 }
+
 /* END Buttonn */
 /* SECTION-1 */
 
@@ -80,23 +89,37 @@
     background: #FDEED6;
     border-radius: 0 0 40px 40px;
     margin-top: -105px;
-    padding-top: 105px
+    padding-top: 105px;
+    position: relative;
 }
 .section-1 .section-1__wrap{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.section-1__image-bg img{
+    position: absolute;
+    top: -5px;
+    left: 40px;
+}
 .section-1 .section-1__content{
     width: 50%;
     padding-top: 70px;
     padding-right: 50px;
+    position: relative;
+}
+.section-1 .section-1__image-bg-1{
+    position: absolute;
+    top: 60px;
+    left: -15px;
 }
 .section-1 .section-1__title{
     font-size: 6rem;
     font-weight: bold;
     color: var(--color-text-main);
     margin-bottom: 4px;
+    position: relative;
+    
 }
 .section-1 .section-1__sub-title{
     font-size: 4.4rem;
@@ -118,32 +141,56 @@
     flex-wrap: wrap;
 }
 
-.section-1 .section-1__buttons .button-1 .button-title{
+.section-1 .section-1__buttons .button-1{
     color: var(--color-text-main);
     font-size: 16px;
     margin-right: 10px;
     font-weight: 500;
 }
 .section-1 .section-1__buttons .button-1 span{
-    color: var(--color-text-main);
     font-size: 16px;
     font-weight: bold;
+    margin-left: 10px;
 }
-.section-1 .section-1__buttons .button-2 .button-title{
+.section-1 .section-1__buttons .button-1:hover{
+    background-color: #003459;
+    color: #ffffff;
+    transition: color 0.5s, background-color 1s;
+}
+
+.section-1 .section-1__buttons .button-2{
     color: #ffffff;
     font-size: 16px;
     font-weight: 600;
 }
+.section-1 .section-1__buttons .button-2:hover{
+    color: #003459;
+    background-color: #ffffff;
+    border: 1.5px solid #003459;
+    transition: color 0.5s, background-color 1s, border 1s;
+}
+.section-1__image-bg-2{
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+}
 .section-1 .section-1__image{
     width: 50%;
     height: 100%;
+    position: relative;
     
 }
-.section-1 .section-1__image img{
+ .section-1__image-bg-4{
+    position: absolute;
+    bottom :0px;
+    left: -100px;
+}
+.section-1 .section-1__image .section-1__image-main{
     width: 90%;
     height: 90%;
     object-fit: contain;
     padding-right: 20px;
+    position: relative;
 }
 
 /* END SECTION ONE */
@@ -169,6 +216,9 @@
     font-weight: bold;
     text-transform: capitalize;
 }
+.section-2 .section-2__box-right{
+    border-radius: 30px;
+}
 .section-2 .section-2__box-right a{
     display: flex;
     align-items: center;
@@ -176,8 +226,9 @@
     border: 1px solid var(--color-text-main);
     border-radius: 30px;
     padding: 0 28px;
+    color: var(--color-text-main);
 }
-.section-2 .section-2__box-right .box-right--title{
+.section-2 .section-2__box-right{
     font-size: 1.6rem;
     margin-right: 10px;
     font-weight: 600;
@@ -185,7 +236,12 @@
 }
 .section-2 .section-2__box-right span{
     font-size: 1.6rem;
-    color: var(--color-text-main);
+    margin-left: 10px;
+}
+.section-2 .section-2__box-right a:hover{
+    background-color: #003459;
+    color: #ffffff;
+    transition: color 0.5s, background-color 1s;
 }
 .section-2 .section-2__list{
     display: flex;
@@ -198,6 +254,10 @@
      overflow: hidden;
      padding: 10px;
      box-shadow: 0px 4px 28px -2px rgba(0, 0, 0, 0.0784313725);
+}
+.section-2 .section-2__product-item:hover{
+    transform: scale(1.05);
+    transition: all 1s;
 }
 .section-2 .product-item__image img{
     width: 100%;
@@ -298,21 +358,32 @@
     gap: 30px;
 }
 
-.section-3 .section-3__buttons .button-1 .button-title{
+.section-3 .section-3__buttons .button-1{
     color: var(--color-text-main);
     font-size: 16px;
     margin-right: 10px;
     font-weight: 500;
 }
 .section-3 .section-3__buttons .button-1 span{
-    color: var(--color-text-main);
     font-size: 16px;
     font-weight: bold;
+    margin-left: 10px;
 }
-.section-3 .section-3__buttons .button-2 .button-title{
+.section-3 .section-3__buttons .button-1:hover{
+    background-color: #003459;
+    color: #ffffff;
+    transition: color 0.5s, background-color 1s;
+}
+.section-3 .section-3__buttons .button-2{
     color: #ffffff;
     font-size: 16px;
     font-weight: 600;
+}
+.section-3 .section-3__buttons .button-2:hover{
+    color: #003459;
+    background-color: #ffffff;
+    border: 1.5px solid #003459;
+    transition: color 0.5s, background-color 1s, border 1s;
 }
 /*END SECTION 3 */
 .section-4{
@@ -342,8 +413,9 @@
     border: 1px solid var(--color-text-main);
     border-radius: 30px;
     padding: 0 28px;
+    color: var(--color-text-main);
 }
-.section-4 .section-4__box-right .box-right--title{
+.section-4 .section-4__box-right{
     font-size: 1.6rem;
     margin-right: 10px;
     font-weight: 600;
@@ -351,9 +423,13 @@
 }
 .section-4 .section-4__box-right span{
     font-size: 1.6rem;
-    color: var(--color-text-main);
+    margin-left: 10px;
 }
-
+.section-4 .section-4__box-right a:hover{
+    background-color: #003459;
+    color: #ffffff;
+    transition: color 0.5s, background-color 1s;
+}
 .section-4 .section-4__list{
     display: flex;
     flex-wrap: wrap;
@@ -365,7 +441,10 @@
     box-shadow: 0px 4px 28px -2px rgba(0, 0, 0, 0.0784313725);
     padding: 8px;
 }
-
+.section-4 .section-4__item:hover{
+    transform: scale(1.05);
+    transition: all 1s;
+}
 .section-4 .section-4__item .item-image img{
     width: 100%;
     border-radius: 10px;
@@ -458,7 +537,12 @@
     height: 48px;
     border: none;
 }
-
+.footer .footer__top .footer__top-form .footer__top-button:hover{
+    color: #003459;
+    background-color: #ffffff;
+    border: 1.5px solid #003459;
+    transition: color 0.5s, background-color 1s, border 1s;
+}
 .footer .footer__midle {
     display: flex;
     justify-content: space-between;
