@@ -470,7 +470,7 @@
 }
 @media (max-width: 576.98px) {
     .section-2 .section-2__product-item{
-        width: calc((100% - 10px));
+        width: calc((100%));
     }
 }
 /* END SECTION 2 */
